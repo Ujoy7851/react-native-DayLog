@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import FloatingWritingButton from '../components/FloatingWriteButton';
 
-function FeedsScreen() {
-  return <View style={styles.block} />;
+function CalendarScreen() {
+  return (
+    <View style={styles.block}>
+      <FloatingWritingButton />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-  block: {},
+  block: {
+    flex: 1,
+  },
 });
 
-export default FeedsScreen;
+export default CalendarScreen;
